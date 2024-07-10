@@ -50,3 +50,8 @@ body {
   outline: none;
   margin-top: 0.5rem;
 }
+
+.colorInput label {
+  position: absolute;
+  left: -99999px;
+}

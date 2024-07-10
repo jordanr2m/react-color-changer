@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ColorBox = () => {
+const ColorBox = ({ color }) => {
   return (
-    <div className='colorBox'>
-        <p>Empty Value</p>
+    <div className='colorBox' style={color ? { backgroundColor: color} : null}>
+        <p>{color ? color : "Empty Value"}</p>
     </div>
   )
 }
