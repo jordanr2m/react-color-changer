@@ -1,13 +1,52 @@
-body {
+/* Reset (instructor calls it) */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.colorBox,
+.colorInput input[type='text'] {
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.colorBox {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorInput input[type='text'] {
+  width: 250px;
+  height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  outline: none;
+  margin-top: 0.5rem;
 }
