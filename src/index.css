@@ -1,4 +1,4 @@
-/* Reset (instructor calls it) */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,49 +6,48 @@
 }
 
 html {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 body {
   min-height: 100vh;
-  font-family: 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
 .colorBox,
 .colorInput input[type='text'] {
-  border: 2px solid black;
-  border-radius: 0.3rem;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .colorBox {
-  height: 250px;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  place-content: center;
+}
+
+form {
+  width: 300px;
 }
 
 .colorInput input[type='text'] {
-  width: 250px;
-  height: 48px;
-  font-size: 1rem;
   padding: 0.25rem;
-  outline: none;
   margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
 }
 
 .colorInput label {
