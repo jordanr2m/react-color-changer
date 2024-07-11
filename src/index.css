@@ -25,7 +25,8 @@ body {
 }
 
 .colorBox,
-.colorInput input[type='text'] {
+.colorInput input[type='text'],
+button {
   border: 2px solid #000;
   border-radius: 0.25rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
@@ -57,4 +58,14 @@ form {
 .colorInput label {
   position: absolute;
   left: -99999px;
+}
+
+/* Toggle text button styles */
+button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  cursor: pointer;
 }

@@ -3,20 +3,24 @@ import ColorBox from "./ColorBox";
 import ColorInput from "./ColorInput";
 
 function App() {
-  const [color, setColor] = useState('');
+  const [colorValue, setColorValue] = useState('');
   const [hexValue, setHexValue] = useState('');
+  const [isDarkText, setIsDarkText] = useState(true);
 
   return (
     <div className="App">
       <ColorBox 
-        color={color}
+        colorValue={colorValue}
         hexValue={hexValue}
+        isDarkText={isDarkText}
       />
 
       <ColorInput 
-        color={color}
-        setColor={setColor}
+        colorValue={colorValue}
+        setColorValue={setColorValue}
         setHexValue={setHexValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
       />
     </div>
   );
