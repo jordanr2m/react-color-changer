@@ -38,6 +38,10 @@ body {
   place-content: center;
 }
 
+.colorBox p {
+  text-align: center;
+}
+
 form {
   width: 300px;
 }
